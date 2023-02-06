@@ -1,14 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {GiRotaryPhone, GiBathtub} from 'react-icons/gi';
 import {MdLightMode} from 'react-icons/md';
+import 'aos/dist/aos.css';
+import * as AOS from 'aos';
 
 interface Props {
     item: {imgSrC: string};
 }
 
 function Property({item}: Props) {
+
+    useEffect(() => {
+        AOS.init({duration: 3000})
+    })
+
   return (
-    <div className='m-auto w-10/12 md:w-5/12 lg:w-80 xl:w-96 rounded-3xl overflow-hidden mb-6 border-2 bg-white'>
+    <div className='m-auto w-10/12 md:w-5/12 lg:w-80 xl:w-96 rounded-3xl overflow-hidden mb-6 border-2 bg-white' data-aos="flip-left">
         <div className='w-full h-60'>
             <img className='w-full h-60 max-h-60' src={item.imgSrC} alt='interior'/>
         </div>

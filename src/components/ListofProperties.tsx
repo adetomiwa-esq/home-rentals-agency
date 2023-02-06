@@ -12,7 +12,6 @@ function ListofProperties() {
 
   const [showFew, setShowFew] = useState<Boolean>(true)
 
-  
 
   const [itemList, setItemList] = useState<myItems[]>(items.slice(0,6))
   
@@ -28,7 +27,7 @@ function ListofProperties() {
   }
 
   return (
-    <div className='bg-zinc-50 py-8 px-3 md:px-12'>
+    <div className='bg-zinc-100 py-8 px-3 md:px-12'>
       <header className='flex items-center font-bold'>
         <div className='relative'>
           <h1 className='text-lg md:text-3xl'>List of properties</h1>

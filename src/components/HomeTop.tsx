@@ -1,16 +1,17 @@
 import React from 'react'
 import backGround from '../images/homebackground.png'
 import Map from '../images/map.png';
-import { AiOutlineSearch } from 'react-icons/ai'
+import { AiOutlineSearch } from 'react-icons/ai';
+import { HiOutlineSelector } from 'react-icons/hi'
 
 function HomeTop() {
   return (
-    <div className='pt-14 px-5 sm:px-12 lg:px-28' style={{height: 'calc(600px - 64px)'}}>
+    <div className='pt-5 md:pt-14 px-5 sm:px-12 lg:px-28' style={{height: 'calc(600px - 64px)'}}>
 
         <div className='flex flex-col md:flex-row items-center'>
             <div className='text-white text-xl mb-6 md:mb-0 md:text-3xl lg:text-4xl w-full md:w-5/12 font-bold '>
                 <h1>
-                    The Most Affordable Place To Stay In The San Fransisco Bay Area
+                    The Most Affordable Place To Stay In The San Francisco Bay Area
                 </h1>
             </div>
 
@@ -20,17 +21,23 @@ function HomeTop() {
                 </div>
 
                 <div className='bg-white p-4 mt-3 rounded-md flex'>
-                    <select className='border h-10 w-4/12 outline-none'>
+                    <div className='relative h-10 w-4/12'>
+                    <select className='select border h-10 w-full outline-none '>
                         <option>
                             All Type
                         </option>
                     </select>
+                    <i className='absolute top-[50%] -translate-y-[50%] right-1 pointer-events-none'><HiOutlineSelector/></i>
+                    </div>
 
-                    <select className='border h-10 w-6/12 outline-none'>
-                        <option>
-                            Neighbourhood
-                        </option>
-                    </select>
+                    <div className='relative h-10 w-6/12'>
+                        <select className='select border h-10 w-full outline-none'>
+                            <option>
+                                Neighbourhood
+                            </option>
+                        </select>
+                        <i className='absolute top-[50%] -translate-y-[50%] right-1 pointer-events-none'><HiOutlineSelector/></i>
+                    </div>
 
                     <button className='bg-blue-500 h-10 text-white w-2/12 flex text-3xl items-center justify-center outline-none'>
                         <AiOutlineSearch />
