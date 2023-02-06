@@ -61,7 +61,7 @@ function Landlord() {
         <div className='w-full md:w-6/12'>
             {/* <video className='w-full max-h-[500px] md:h-auto' src='https://www.youtube.com/embed?v=ARz0Nz2d-sg'></video> */}
             <div className="aspect-w-16 aspect-h-14">
-              <iframe src="https://www.youtube.com/embed/ARz0Nz2d-sg" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+              <iframe src="https://www.youtube.com/embed/ARz0Nz2d-sg" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title='myFrame' allowFullScreen></iframe>
             </div>
         </div>
     </div>
