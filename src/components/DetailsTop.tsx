@@ -13,7 +13,7 @@ function DetailsTop() {
   }, [])
 
   return (
-    <div className='flex flex-col sm:flex-row sm:items-center px-8 lg:px-20 overflow-x-hidden'>
+    <div className='flex flex-col sm:flex-row sm:items-center px-8 lg:px-20 overflow-x-hidden max-w-full'>
         <div className='text-white w-full sm:w-1/2 mr-12 lg:mr-16 text-base md:text-lg' data-aos="fade-right">
           <div className='flex items-end w-full'>
            <div className='relative w-2/4 mr-6 flex items-center justify-center h-56 lg:h-80'>

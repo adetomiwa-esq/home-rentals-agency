@@ -34,7 +34,7 @@ function Landlord() {
   
 
   return (
-    <div className='flex flex-col md:flex-row md:my-16 overflow-x-hidden'>
+    <div className='flex flex-col md:flex-row md:my-16 overflow-x-hidden max-w-full'>
         <div className='w-full md:w-6/12 md:pl-3 lg:pl-16 pr-2 min-h-[400px] md:min-h-full flex relative' style={{background: 'rgba(244, 81, 30, 0.07)',}}>
           <div className='my-7 mx-4 md:m-auto' data-aos="slide-right">
             <p>{ownersList[currentIndex].description}</p>
