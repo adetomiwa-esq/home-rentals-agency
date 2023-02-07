@@ -15,6 +15,12 @@ code {
     monospace;
 }
 
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 
 @tailwind base;
 @tailwind components;
